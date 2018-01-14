@@ -1,4 +1,4 @@
-# NEWS
+# yufid-channel
 
 ## Prerequisites
 
