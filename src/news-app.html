@@ -16,6 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="import" href="news-data.html">
 <link rel="import" href="news-nav.html">
+ <link rel="import" href="my-sub-footer.html">
 
 <dom-module id="news-app">
 
@@ -29,11 +30,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         min-height: 100vh;
         padding-bottom: 64px;
 
-        --app-border-style: 1px solid #CCC;
+        /*--app-border-style: 1px solid #CCC;*/
+        --app-border-style: 1px solid #de931c;
         --app-transparent-border-style: 1px solid rgba(255, 255, 255, 0.5);
         --app-button-border-style: 2px solid #222;
         --app-cover-text-color: #FFF;
-        --app-nav-background-color: #222;
+        /*--app-nav-background-color: #222;*/
+        --app-nav-background-color: #841b1e;
         --app-nav-text-color: #FFF;
         --app-nav-deselected-text-color: #CCC;
         --app-nav-selected-background-color: #555;
@@ -146,8 +149,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     </iron-pages>
 
+    
+    <sub-footer></sub-footer>
     <footer>
-      <a href="https://www.polymer-project.org/1.0/toolbox/">Made by Polymer</a>
+      <a href="https://yufid.tv/">© Copyright Yufid.TV 2018</a>
     </footer>
 
   </template>

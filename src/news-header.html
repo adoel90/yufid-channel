@@ -97,6 +97,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       .sticky-nav .sticky-nav-toolbar {
         background: var(--app-nav-background-color);
+        /*https://developer.mozilla.org/id/docs/Web/CSS/var*/
       }
 
       :host([page=list]) .sticky-nav .sticky-nav-center {
@@ -200,7 +201,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         .sticky-nav .logo {
           font-size: 23px;
-          padding-top: 16px;
+          /*padding-top: 16px;*/
         }
 
         .sticky-nav .date-line {
@@ -284,9 +285,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <div class="logo">
             <a href="/" aria-label$="[[_computeAppHomeLabel(appTitle)]]">[[appTitle]]</a>
           </div>
-          <div class="date-line" role="heading">
+         <!--  <div class="date-line" role="heading">
             [[category.title]] <span aria-hidden="true">&nbsp; &middot; &nbsp;</span> [[_currentTime()]]
-          </div>
+          </div> -->
           <div class="article-headline">
             <slot></slot>
           </div>

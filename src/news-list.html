@@ -153,7 +153,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </news-list-featured-item>
 
         <ul class="app-grid article-grid fade-in">
-          <dom-repeat items="[[_slice(category.items, 1, 5)]]">
+          <dom-repeat items="[[_slice(category.items, 1, 9)]]">
             <template>
               <li>
                 <news-list-item item="[[item]]"></news-list-item>
@@ -162,7 +162,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </dom-repeat>
         </ul>
 
-        <h3>Opinions</h3>
+      <!--   <h3>Opinions</h3>
         <ul class="opinions-grid fade-in">
           <dom-repeat items="[[_slice(category.items, 5)]]">
             <template>
@@ -171,7 +171,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </li>
             </template>
           </dom-repeat>
-        </ul>
+        </ul> -->
       </div>
 
       <aside>
@@ -181,18 +181,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               ad-width="300" ad-height="250"></news-gpt-ad>
         </div>
         <news-side-list class="fade-in" items="[[_slice(category.items, 0, 3)]]">
-          Most Read
+          Video yang sering di tonton...
         </news-side-list>
-        <news-side-list class="fade-in" featured items="[[_slice(category.items, 3, 9)]]">
+        <!-- <news-side-list class="fade-in" featured items="[[_slice(category.items, 3, 9)]]">
           More Top Stories
-        </news-side-list>
+        </news-side-list> -->
       </aside>
     </div>
 
-    <news-network-warning
-        hidden$="[[!failure]]"
-        offline="[[offline]]"
-        on-try-reconnect="_tryReconnect"></news-network-warning>
+  <news-network-warning
+      hidden$="[[!failure]]"
+      offline="[[offline]]"
+      on-try-reconnect="_tryReconnect"></news-network-warning>
 
   </template>
 

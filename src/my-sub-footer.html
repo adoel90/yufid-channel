@@ -1,0 +1,56 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="sub-footer">
+
+	<template>
+		<style>
+		    :host {
+		      all: initial; /* 1st rule so subsequent properties are reset. */
+		      display: block;
+		      background: grey;
+		      font-size: 28px;
+		    }
+	  	</style>
+		<p>
+			my-element: all CSS properties are reset to their initial value using 
+			<code>all: initial</code>
+		</p>
+		<slot></slot>
+	</template>
+
+	<script>
+	class SubFooter extends Polymer.Element{
+
+		static get is(){ return "sub-footer"; }
+
+		// constructor(){
+		// 	super();
+		// 	this.textContent = "Sub Footer element ";
+		// }
+
+		// connectedCallback() {
+		//     super.connectedCallback();
+		//     //console.log('my-element created!');
+		    
+	      	
+		//   }
+
+	 //  	ready() {
+	 //    	super.ready();
+	 //   	 	this.textContent = 'I\'m a Subfooter custom element!';
+	 //  	}
+
+	 //  	_fire(){
+	 //  		console.log("Oke fire !!!");
+	 //  	}
+	  
+	}
+
+	customElements.define(SubFooter.is, SubFooter);
+
+	// var feature = new SubFooter();
+	// feature._fire();
+	</script>
+
+</dom-module>
+
